@@ -1,1 +1,1 @@
-This is a Flask Python Web Crawler that takes in an initial set of seed urls, keywords, and the number of pages, and prints all of them out for the user.
+This is a Flask Python Web Crawler that takes in an initial set of seed URLs, keywords, and the number of pages and prints all of them out for the user. All of the pages collected are stored in the pages directory of the respective user, and the URLs visited are stored inside of the visited_urls.txt file.
