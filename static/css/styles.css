@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+}
+
+h1 {
+    margin: 20px 0; /* Add spacing around the title */
+    color: #4CAF50;
+    text-align: center; /* Center the text */
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%; /* Makes it responsive */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the inputs inside the box */
+    justify-content: center;
+    gap: 15px; /* Adds space between elements */
+}
+
+form textarea, 
+form input[type="text"], 
+form input[type="range"] {
+    width: 90%; /* Makes input and textarea smaller than the form */
+    padding: 10px;
+    margin: 0; /* Removes default margins */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+#max_pages_value {
+    font-weight: bold;
+}

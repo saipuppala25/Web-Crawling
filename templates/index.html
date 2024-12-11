@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Crawler</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Custom Web Crawler</h1>
+    <form method="POST">
+        <label for="seed_urls">Seed URLs (one per line):</label><br>
+        <textarea id="seed_urls" name="seed_urls" rows="5" cols="40" placeholder="Enter seed URLs here..."></textarea><br><br>
+
+        <label for="keywords">Keywords (comma-separated):</label><br>
+        <input type="text" id="keywords" name="keywords" placeholder="e.g., Apalachee, shooting, Georgia"><br><br>
+
+        <label for="max_pages">Max Pages:</label><br>
+        <input type="range" id="max_pages" name="max_pages" min="10" max="500" value="100" oninput="updateMaxPagesValue(this.value)">
+        <span id="max_pages_value">100</span> pages<br><br>
+
+        <button type="submit">Start Crawling</button>
+    </form>
+
+    <script>
+        function updateMaxPagesValue(value) {
+            document.getElementById('max_pages_value').textContent = value;
+        }
+    </script>
+</body>
+</html>
